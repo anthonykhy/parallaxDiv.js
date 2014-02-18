@@ -43,7 +43,8 @@ Apply javascript
 Further customize the parallax background margin and wrapper div name 
 If you would rather run parallaxDiv confined to a particular container (instead of using the whole document) you can
 change `body` to some other selector.
-Default Value
+
+Default Value below:
 ``` Html
   {
   	pixelMargin: 20,
