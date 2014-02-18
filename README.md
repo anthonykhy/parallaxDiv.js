@@ -1,7 +1,8 @@
 parallaxDiv.js
 ==============
-
 [Demo](http://at.mosphe.re/ParallaxDiv/demo.html).
+
+inspired by https://github.com/wagerfield/parallax
 
 parallaxdiv.js is a jQuery plugin that you can create simple background parallax effect in specific div on browser triggered by
 - mouseon 
