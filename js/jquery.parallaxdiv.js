@@ -42,6 +42,7 @@
 			var offsetY = (halfY-y)/halfY;
 
 			element.css('-webkit-transform', 'translate3d('+(offsetX*settings.pixelMargin-settings.pixelMargin)+'px, '+(offsetY*settings.pixelMargin-settings.pixelMargin)+'px, 0px)');
+			element.children().css('-webkit-transform', 'translate3d('+(-1*(offsetX*settings.pixelMargin-settings.pixelMargin))+'px, '+(-1*(offsetY*settings.pixelMargin-settings.pixelMargin))+'px, 0px)');
 		});
 	}		  
 })(jQuery);
