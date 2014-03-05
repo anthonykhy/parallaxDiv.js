@@ -27,6 +27,7 @@
 			window.ondevicemotion = function(e) {
 				//console.log('translate3d('+((e.accelerationIncludingGravity.x/10)*settings.pixelMargin)+'px, '+(-(e.accelerationIncludingGravity.y/10)*settings.pixelMargin)+'px, 0px)');
 				element.css('-webkit-transform', 'translate3d('+(((e.accelerationIncludingGravity.x/10)*settings.pixelMargin-settings.pixelMargin))+'px, '+(((e.accelerationIncludingGravity.y/10)*settings.pixelMargin)-settings.pixelMargin)+'px, 0px)');	
+				element.children().css('-webkit-transform', 'translate3d('+(-1*((e.accelerationIncludingGravity.x/10)*settings.pixelMargin-settings.pixelMargin))+'px, '+(-1*((e.accelerationIncludingGravity.y/10)*settings.pixelMargin)-settings.pixelMargin)+'px, 0px)');	
 			}
 		}
 		
