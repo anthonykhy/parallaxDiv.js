@@ -46,11 +46,11 @@
 			if (window.DeviceMotionEvent != undefined) {
 				window.ondevicemotion = function(e) {
 					//console.log('translate3d('+((e.accelerationIncludingGravity.x/10)*settings.pixelMargin)+'px, '+(-(e.accelerationIncludingGravity.y/10)*settings.pixelMargin)+'px, 0px)');	
-					var xMove = (((e.accelerationIncludingGravity.x/10)*settings.pixelMargin-settings.pixelMargin))
+					var xMove = (((e.accelerationIncludingGravity.x*(-1)/10)*settings.pixelMargin)-settings.pixelMargin)
 					var yMove = (((e.accelerationIncludingGravity.y/10)*settings.pixelMargin)-settings.pixelMargin)
 					
-					element.css('-webkit-transform', 'translate3d('+ xMove +'px, '+ yMove +'px, 0px)');	
-					element.children().css('-webkit-transform', 'translate3d('+(-1*xMove)+'px, '+(-1*yMove)+'px, 0px)');	
+					element.css('-webkit-transform', 'translate3d('+ (xMove) +'px, '+ yMove +'px, 0px)');	
+					element.children().css('-webkit-transform', 'translate3d('+(1-xMove)+'px, '+(-1*yMove)+'px, 0px)');	
 				}
 			}
 			element.unbind("mousemove");
