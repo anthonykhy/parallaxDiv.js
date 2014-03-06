@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="Jquery">
+<meta name="author" content="Anthony.kwok">
+<style>
+
+</style>
+<title>
+
+	Bootstrap
+
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<style>#photographs, #parallaxWrap2{width:auto;  }
+
+
+
+#content, #content h1{
+	font-family: 'Lato' !important;
+	font-style: normal !important;
+	font-weight: 100 !important;
+}
+.photographs {
+    width: 768px;
+	height:165px;
+}
+
+@media (min-width: 768px) {
+  .photographs {
+    width: 768px;
+	height:165px;
+  }
+}
+@media (min-width: 992px) {
+  .photographs {
+    width: 992px;
+	height:200px;
+  }
+}
+@media (min-width: 1200px) {
+  .photographs {
+    width: 1200px;
+	height:256px;
+	
+  }
+}
+</style>
+<link href="./css/docs.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">Bootstrap with parallaxDiv</a>
+    </div>
+
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+	<div id="photographs">
+    <div class="bs-docs-header" id="content">
+
+      <div  class="container">
+        <h1>Getting started</h1>
+        <p>An overview of Bootstrap, how to download and use, basic templates and examples, and more.</p>
+
+      </div>
+	  
+    </div>
+	</div>
+    <div class="container bs-docs-container">
+
+      <div class="row">
+		
+        <div class="col-md-9" role="main">
+          <!-- Getting started
+================================================== -->
+			<div class="bs-docs-section">
+			  <h1 id="Main" class="page-header">Main</h1>
+
+			  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			</div>
+
+ 
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    
+
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="../js/jquery.parallaxdiv.js"></script>
+<script src="./js/docs.min.js"></script>
+
+	<script type="text/javascript">
+		var basePhotoURL = "https://farm8.staticflickr.com/7460/12795976594_38da454a89_b.jpg" //my own photo in flickr
+		$('#photographs').parallaxDiv(basePhotoURL,{pixelMargin: 40,wrappername: "parallaxWrap2"});
+	</script>
+	<!-- Begin My google analytics DONT COPY -->
+	<script>
+  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  	ga('create', 'UA-48181620-1', 'mosphe.re');
+  	ga('send', 'pageview');
+
+ 	</script>
+	<!-- END google analytics -->
+
+
+  </body>
+</html>
