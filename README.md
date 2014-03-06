@@ -1,6 +1,6 @@
 parallaxDiv.js
 ==============
-Updated with bootstrap demo.
+Updated with [twitter bootstrap](http://getbootstrap.com) demo.
 Will commit the bootstrap example later.
 
 [Demo](http://at.mosphe.re/ParallaxDiv/demo.html).
